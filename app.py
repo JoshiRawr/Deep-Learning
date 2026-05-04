@@ -5,7 +5,7 @@ import numpy as np
 import pickle
 from PIL import Image
 
-model = tf.keras.models.load_model("waste_model.keras")
+model = tf.keras.models.load_model("waste_model.keras", compile=False)
 
 with open("class_names.pkl", "rb") as f:
     class_names = pickle.load(f)
